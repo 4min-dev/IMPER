@@ -1,0 +1,17 @@
+.newpass__content-title {
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 168.9%;
+}
+
+.newpass__content-title--mail {
+    font-weight: 700;
+    text-decoration-line: underline;
+}
+
+@media (max-width: 1024px) {
+.newpass__content-title {
+    text-align: center;
+}
+}

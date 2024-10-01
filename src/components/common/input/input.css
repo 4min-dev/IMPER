@@ -1,0 +1,64 @@
+.input {
+    width: 488px;
+    height: 55px;
+    flex-shrink: 0;
+
+    padding: 17px 28px;
+    box-sizing: border-box;
+
+    border: none;
+    border-radius: 16px;
+    background: #F9F9FC;
+    box-shadow: 0px 1px 4px 0px #ECECEF;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'Montserrat';
+
+    outline: none;
+}
+
+.input--pass {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    display: flex;
+    align-items: center;
+}
+
+.input-pass {
+    width: 100%;
+    height: 100%;
+
+    border: none;
+    border-radius: 16px;
+    background: transparent;
+
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    font-family: 'Montserrat';
+
+    outline: none;
+}
+
+@media (max-width: 540px) {
+    .input {
+        width: 368px;
+        height: 55px;
+    }
+}
+
+@media (max-width: 425px) {
+    .input {
+        width: 320px;
+        height: 45px;
+
+        padding: 15px 19px;
+
+        font-size: 14px;
+    }
+}

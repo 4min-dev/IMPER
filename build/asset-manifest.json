@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/static/css/main.8007a479.css",
+    "main.js": "/static/js/main.a763016b.js",
+    "static/media/Montserrat-SemiBold.ttf": "/static/media/Montserrat-SemiBold.d5e0cc788cba9ced1fb9.ttf",
+    "static/media/Montserrat-Medium.ttf": "/static/media/Montserrat-Medium.c86e3b9010ff63c99166.ttf",
+    "static/media/Montserrat-Bold.ttf": "/static/media/Montserrat-Bold.2c155811b35513d5beaa.ttf",
+    "static/media/Montserrat-Regular.ttf": "/static/media/Montserrat-Regular.ceb11275ab638627a643.ttf",
+    "static/media/mail-enter.png": "/static/media/mail-enter.bcc4d32071767d749bc8.png",
+    "static/media/mail-link.png": "/static/media/mail-link.d7902c3681155392bb8b.png",
+    "static/media/people.png": "/static/media/people.adcf02ff24b2d6089733.png",
+    "static/media/subscribe.png": "/static/media/subscribe.abe17c733dcfa967cbe4.png",
+    "static/media/placemark-me.png": "/static/media/placemark-me.edd55210a606bc2822e3.png",
+    "static/media/placemark-active.png": "/static/media/placemark-active.152e8f2e82555e113b39.png",
+    "static/media/placemark.png": "/static/media/placemark.3aca4cc816a9062556ed.png",
+    "static/media/madebytw.png": "/static/media/madebytw.681aac1afdeb643750ad.png",
+    "static/media/logo.png": "/static/media/logo.59654a3a7c4483c8d2e5.png",
+    "static/media/lg.svg?io9a6k": "/static/media/lg.09cd8e9be7081f216644.svg",
+    "static/media/lg.woff?io9a6k": "/static/media/lg.356a0e9cb064c7a196c6.woff",
+    "static/media/lg.ttf?io9a6k": "/static/media/lg.747d038541bfc6bb8ea9.ttf",
+    "static/media/lg.woff2?io9a6k": "/static/media/lg.64b800aa30714fd916dc.woff2",
+    "static/media/Globe.svg": "/static/media/Globe.b0bf452be54d226bf6e1a4e8a3387e23.svg",
+    "static/media/eye-off.svg": "/static/media/eye-off.4679abf223edf4fd41e1f75231236652.svg",
+    "index.html": "/index.html",
+    "static/media/ProfileCircle.svg": "/static/media/ProfileCircle.909a3534d6a0f80f34dbab651c978e6a.svg",
+    "static/media/Mail.svg": "/static/media/Mail.c3a37db7e851d708371fddf795a906f3.svg",
+    "static/media/Phone.svg": "/static/media/Phone.ca8118f92649fb4a0f439f079733d5a4.svg",
+    "static/media/eye.svg": "/static/media/eye.ff07e03ae0d29657345923a5d33331e5.svg",
+    "static/media/Menu.svg": "/static/media/Menu.a0f88cca323cd9b9d7732ecc8c92f388.svg",
+    "static/media/Close.svg": "/static/media/Close.1a0261175954121a3f26b845a0d92757.svg",
+    "static/media/ChevronL.svg": "/static/media/ChevronL.280007f702620f0c0e4bfd5cacc99299.svg",
+    "static/media/ChevronR.svg": "/static/media/ChevronR.ba27b54c03403281245d3285d8edc8d0.svg",
+    "main.8007a479.css.map": "/static/css/main.8007a479.css.map",
+    "main.a763016b.js.map": "/static/js/main.a763016b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8007a479.css",
+    "static/js/main.a763016b.js"
+  ]
+}
