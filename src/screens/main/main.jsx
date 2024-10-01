@@ -1,5 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import './main.css';
+import { QuestionCard } from './questionCard/questionCard';
+import getImage from '../../assets/getImage';
+import getIcon from '../../assets/getIcon';
 
 const indexes = [
   { name: 'Главная', id: 1 },
@@ -9,13 +12,28 @@ const indexes = [
   { name: 'Отзывы', id: 5 },
 ];
 
-function requireToVectors(fileName) {
-  return require(`../../assets/icons/${fileName}`)
-}
-
-function requireToImages(fileName) {
-  return require(`../../assets/images/${fileName}`)
-}
+const questions = [
+  {
+    id:1,
+    text:'Сколько по времени длится мероприятие?',
+    answer:'Среднее время мероприятия составляет 3-4 часа, с учётом дороги туда и обратно.'
+  },
+  {
+    id:2,
+    text:'Сколько по времени длится мероприятие?',
+    answer:'Среднее время мероприятия составляет 3-4 часа, с учётом дороги туда и обратно.'
+  },
+  {
+    id:3,
+    text:'Сколько по времени длится мероприятие?',
+    answer:'Среднее время мероприятия составляет 3-4 часа, с учётом дороги туда и обратно.'
+  },
+  {
+    id:4,
+    text:'Сколько по времени длится мероприятие?',
+    answer:'Среднее время мероприятия составляет 3-4 часа, с учётом дороги туда и обратно.'
+  },
+]
 
 export const Main = () => {
   const [currIndex, setCurrIndex] = React.useState(indexes[0]);
@@ -36,21 +54,21 @@ export const Main = () => {
         <div className='header__logo'>
           <a href='#' className='border__button'>
             <img className='dekstop' src='https://www.figma.com/file/K5PsXovoHkhMJnpr4pFQzl/image/40f80a498c3617d04fb02ce20b4f1849053ab037' alt="Logo" />
-            <img className='adaptive' src={requireToImages('header__adaptive__logo.png')} alt="Logo" />
+            <img className='adaptive' src={getImage('header__adaptive__logo.png')} alt="Logo" />
           </a>
         </div>
 
         <nav className='adaptive'>
           <a href='#' className='styled__border__button'>
-            <img src={requireToVectors('BurgerMenu.svg')} alt='Menu'/>
+            <img src={getIcon('BurgerMenu.svg')} alt='Menu'/>
           </a>
 
           <a href='#' className='styled__border__button'>
-              <img src={requireToVectors('Vk.svg')} alt='VK' />
+              <img src={getIcon('Vk.svg')} alt='VK' />
             </a>
 
             <a href='#' className='styled__border__button'>
-              <img src={requireToVectors('Telegram.svg')} alt='Telegram' />
+              <img src={getIcon('Telegram.svg')} alt='Telegram' />
             </a>
         </nav>
 
@@ -84,16 +102,16 @@ export const Main = () => {
             <a href='#' className='styled__button blue'>Стать волонтёром</a>
 
             <a href='#' className='styled__border__button'>
-              <img src={requireToVectors('Vk.svg')} alt='VK' />
+              <img src={getIcon('Vk.svg')} alt='VK' />
             </a>
 
             <a href='#' className='styled__border__button'>
-              <img src={requireToVectors('Telegram.svg')} alt='Telegram' />
+              <img src={getIcon('Telegram.svg')} alt='Telegram' />
             </a>
           </div>
 
           <button type='button' className='button__to__down'>
-            <img src={requireToVectors('DownArrow.svg')} alt='Down'/>
+            <img src={getIcon('DownArrow.svg')} alt='Down'/>
           </button>
         </div>
       </section>
@@ -109,29 +127,29 @@ export const Main = () => {
           <div className='get__started__cards__container'>
             <div className='get__started__card'>
               <span className='card__id'>01</span>
-              <img src={requireToImages('image__1.png')} alt='Card logo'/>
+              <img src={getImage('image__1.png')} alt='Card logo'/>
               <div className='card__button__wrapper'>
                 Зарегистрируйтесь на сайте
                 <a href='#' >
-                <img src={requireToVectors('LinkBlue.svg')} alt='Sign up'/>
+                <img src={getIcon('LinkBlue.svg')} alt='Sign up'/>
                 </a>
               </div>
             </div>
 
             <div className='get__started__card'>
               <span className='card__id'>02</span>
-              <img src={requireToImages('image__2.png')} alt='Card logo'/>
+              <img src={getImage('image__2.png')} alt='Card logo'/>
               <div className='card__button__wrapper'>
                 Выберите ближайший приют
                 <a href='#' >
-                  <img src={requireToVectors('GeoBlue.svg')} alt='Geo'/>
+                  <img src={getIcon('GeoBlue.svg')} alt='Geo'/>
                 </a>
               </div>
             </div>
 
             <div className='get__started__card'>
               <span className='card__id'>03</span>
-              <img src={requireToImages('image__3.png')} alt='Card logo'/>
+              <img src={getImage('image__3.png')} alt='Card logo'/>
               <div className='card__button__wrapper'>
               Запись на время и дату, в которую вы хотите прийти и помочь
                 <a href='#' className='styled__button blue'>
@@ -147,7 +165,7 @@ export const Main = () => {
       </section>
 
       <section id='application__section'>
-        <img className='blob__left' src={requireToImages('Blob_1.png')} alt='Blob_1'/>
+        <img className='blob__left' src={getImage('Blob_1.png')} alt='Blob_1'/>
         <div className='about__application'>
           <div className='styled__button aqua'>
             <span className='dekstop'>Доступно для Android и IOS</span> 
@@ -165,7 +183,7 @@ export const Main = () => {
           Скачать приложение
         </a>
 
-        <img className='blob__right' src={requireToImages('Blob_2.png')} alt='Blob_2'/>
+        <img className='blob__right' src={getImage('Blob_2.png')} alt='Blob_2'/>
       </section>
 
       <section id='faq__section'>
@@ -176,16 +194,8 @@ export const Main = () => {
           </a>
         </div>
 
-        <div className='question__card'>
-          <div className="question__card__text__container">
-          <span className='question__title'>
-            Сколько по времени длится мероприятие?
-          </span>
-          </div>
-
-          <button type='button'>
-            <img src={requireToVectors('Plus.svg')} alt='Open the question' onClick={questionButtonHandler}/>
-          </button>
+        <div className='questions__container'>
+          {questions.length > 0 && questions.map((question) => <QuestionCard question={question}/>)}
         </div>
       </section>
     </>

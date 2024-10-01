@@ -100,7 +100,7 @@ header {
     display: none;
 }
 
-nav.dekstop, nav.adaptive {
+nav.dekstop {
     position: relative;
     display: flex;
     white-space: nowrap;
@@ -110,7 +110,6 @@ nav.dekstop {
     border: 1px solid #55A2FF26;
     border-radius: 16px;
     overflow: hidden;
-    /* Чтобы круг не выходил за границы навигации */
 }
 
 nav.dekstop button {
@@ -136,19 +135,19 @@ nav.dekstop button.active {
 
 nav.adaptive .styled__border__button {
     border-radius: 6.05px;
-    padding:10px;
+    padding: 10px;
     display: flex;
     align-items: center;
 }
 
 nav.adaptive .styled__border__button img {
     width: 25px;
-height: 25x;
-top: 8.17px;
-left: 5.83px;
-gap: 0px;
-border: 2.33px 0px 0px 0px;
-opacity: 0px;
+    height: 25x;
+    top: 8.17px;
+    left: 5.83px;
+    gap: 0px;
+    border: 2.33px 0px 0px 0px;
+    opacity: 0px;
 
 }
 
@@ -255,20 +254,28 @@ nav.adaptive .styled__border__button:nth-child(2) {
 @media (max-width: 1350px) {
     #main__section .landing__logo>img {
         width: 65%;
-        height:85%;
+        height: 85%;
     }
 }
 
-@media (max-width: 1200px) { /* Ноутбуки */
+@media (max-width: 1200px) {
+
+    /* Ноутбуки */
     #main__section {
-        flex-direction: column; /* Изменяем направление на колонку */
-        height: auto; /* Позволяем высоте подстраиваться под контент */
+        flex-direction: column;
+        /* Изменяем направление на колонку */
+        height: auto;
+        /* Позволяем высоте подстраиваться под контент */
     }
+
     .section__title {
-        font-size: 36px /* Уменьшаем размер шрифта */
+        font-size: 36px
+            /* Уменьшаем размер шрифта */
     }
+
     .section__description {
-        width: 70%; /* Увеличиваем ширину описания */
+        width: 70%;
+        /* Увеличиваем ширину описания */
     }
 
     #main__section .landing__logo>img {
@@ -279,6 +286,7 @@ nav.adaptive .styled__border__button:nth-child(2) {
     .section__title {
         font-weight: 700;
     }
+
     .section__description {
         font-size: 20px;
         font-weight: 400;
@@ -289,7 +297,9 @@ nav.adaptive .styled__border__button:nth-child(2) {
     }
 }
 
-@media (max-width: 1180px) { /* Ноутбуки */
+@media (max-width: 1180px) {
+
+    /* Ноутбуки */
     #main__section .landing__logo>img {
         width: 50%;
     }
@@ -300,93 +310,103 @@ nav.adaptive .styled__border__button:nth-child(2) {
 }
 
 /* Медиа-запросы для адаптации под планшеты */
-@media (max-width: 1024px) { /* Планшеты */
+@media (max-width: 1024px) {
+
+    /* Планшеты */
     nav.dekstop button {
         font-size: 10px;
-        padding:5px 10px 5px 10px;
+        padding: 5px 10px 5px 10px;
     }
 
     #main__section .landing {
         margin-top: 40px;
     }
 
-    #main__section .landing__logo  {
+    #main__section .landing__logo {
         width: 90%;
         height: 90%;
     }
+
     #main__section .section__title {
-     font-size: 28px;
-     font-weight: 700;
-     line-height: 33.6px;
-     letter-spacing: -0.02em;
-     text-align: left;        
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.6px;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 
     #main__section .landing .button__to__down {
         display: none;
     }
-   
-      #main__section .landing__clickable {
-       margin-bottom: 40px;
-      }
+
+    #main__section .landing__clickable {
+        margin-bottom: 40px;
+    }
 }
 
-@media (max-width: 860px) { /* Телефоны и планшеты */
+@media (max-width: 860px) {
+
+    /* Телефоны и планшеты */
     .dekstop {
-        display: none !important; /* Добавление !important для применения к классам по типу classname="dekstop someClassname" */
+        display: none !important;
+        /* Добавление !important для применения к классам по типу classname="dekstop someClassname" */
     }
 
-    .adaptive {
-        display: inline;
+    .adaptive:not(body) {
+        display: initial;
+    }
+
+    nav.adaptive {
+        display: flex;
     }
 
     #main__section .section__title {
-     font-size: 28px;
-     font-weight: 700;
-     line-height: 33.6px;
-     letter-spacing: -0.02em;
-     text-align: left;        
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.6px;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 
-   #main__section .landing {
-    align-items: center;
-   }
+    #main__section .landing {
+        align-items: center;
+    }
 
-   #main__section .landing__logo  {
-    width: 100%;
-    height: 100%;
-    align-items: center;
-    justify-content: center;
-    top:57%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-   }
+    #main__section .landing__logo {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
 
-   #main__section .landing__logo img {
-    width: 80%;
-    height: 60%;
-    top: 203px;
-    left: 38px;
-   }
+    #main__section .landing__logo img {
+        width: 80%;
+        height: 60%;
+        top: 203px;
+        left: 38px;
+    }
 
-   #main__section .landing__clickable {
-    margin-top: 200px;
-    margin-bottom: 87px;
-    width: 100%;
-   }
+    #main__section .landing__clickable {
+        margin-top: 200px;
+        margin-bottom: 87px;
+        width: 100%;
+    }
 
-   #main__section .landing__clickable a {
-    width: 100%;
-    text-align: center;
-   }
+    #main__section .landing__clickable a {
+        width: 100%;
+        text-align: center;
+    }
 
-   #main__section .section__description {
-    display: none;
-   }
+    #main__section .section__description {
+        display: none;
+    }
 
-   #main__section .landing .styled__border__button {
-    display: none;
-   }
+    #main__section .landing .styled__border__button {
+        display: none;
+    }
 }
 
 #get__started__section {
@@ -504,21 +524,30 @@ nav.adaptive .styled__border__button:nth-child(2) {
 }
 
 /* Медиа-запросы для адаптации под планшеты */
-@media (max-width: 1024px) { /* Планшеты */
+@media (max-width: 1024px) {
+
+    /* Планшеты */
     #get__started__section .section__title {
-        font-size: 36px; /* Уменьшаем размер шрифта */
-        line-height: 43.2px; /* Уменьшаем интервал */
+        font-size: 36px;
+        /* Уменьшаем размер шрифта */
+        line-height: 43.2px;
+        /* Уменьшаем интервал */
     }
 
     #get__started__section>.get__started__cards__container {
-        display: flex; /* Используем flexbox */
-        flex-direction: column; /* Размещаем карточки в колонку */
-        gap: 20px; /* Устанавливаем отступы между карточками */
+        display: flex;
+        /* Используем flexbox */
+        flex-direction: column;
+        /* Размещаем карточки в колонку */
+        gap: 20px;
+        /* Устанавливаем отступы между карточками */
     }
-    
+
     #get__started__section>.get__started__cards__container>.get__started__card {
-        width: 100%; /* Каждая карточка занимает 100% ширины контейнера */
-        height: 201px; /* Устанавливаем высоту для карточек */
+        width: 100%;
+        /* Каждая карточка занимает 100% ширины контейнера */
+        height: 201px;
+        /* Устанавливаем высоту для карточек */
         position: relative;
         border-radius: 16px;
         overflow: hidden;
@@ -529,22 +558,27 @@ nav.adaptive .styled__border__button:nth-child(2) {
     }
 
     #get__started__section>.get__started__cards__container>.get__started__card:nth-child(2) {
-        margin:0; /* Убираем отступы у второй карточки */
+        margin: 0;
+        /* Убираем отступы у второй карточки */
     }
 
     #get__started__section>.section__description {
-        margin-top: 48px; /* Уменьшаем отступ сверху */
-        max-width: 90%; /* Увеличиваем ширину описания */
+        margin-top: 48px;
+        /* Уменьшаем отступ сверху */
+        max-width: 90%;
+        /* Увеличиваем ширину описания */
     }
 }
 
-@media (max-width: 780px) { /* Телефоны и планшеты */
+@media (max-width: 780px) {
+
+    /* Телефоны и планшеты */
     #get__started__section .section__title {
-     font-size: 19px !important;
-     font-weight: 700;
-     line-height: 22.8px;
-     letter-spacing: -0.02em;
-     text-align: left;
+        font-size: 19px !important;
+        font-weight: 700;
+        line-height: 22.8px;
+        letter-spacing: -0.02em;
+        text-align: left;
     }
 }
 
@@ -563,18 +597,19 @@ nav.adaptive .styled__border__button:nth-child(2) {
     overflow: hidden;
 }
 
-#application__section .blob__left, #application__section .blob__right {
+#application__section .blob__left,
+#application__section .blob__right {
     position: absolute;
 }
 
 #application__section .blob__left {
-    left:0;
-    top:0;
+    left: 0;
+    top: 0;
 }
 
 #application__section .blob__right {
-    right:0;
-    bottom:0;
+    right: 0;
+    bottom: 0;
 }
 
 #application__section .about__application {
@@ -584,7 +619,7 @@ nav.adaptive .styled__border__button:nth-child(2) {
 }
 
 #application__section .about__application .styled__button {
-    padding:12px;
+    padding: 12px;
     border-radius: 16px;
     font-size: 16px;
     font-weight: 500;
@@ -604,7 +639,7 @@ nav.adaptive .styled__border__button:nth-child(2) {
     letter-spacing: -0.02em;
     text-align: center;
     z-index: 1;
-    color:white;
+    color: white;
     width: 50vw;
     margin-top: 16px;
     margin-bottom: 32px;
@@ -625,11 +660,11 @@ nav.adaptive .styled__border__button:nth-child(2) {
     #application__section {
         border-radius: 32px;
         height: 620px;
-        
+
     }
 
     #application__section .blob__left {
-        top:-12px;
+        top: -12px;
         width: 220.9px;
         height: 185.24px;
     }
@@ -667,6 +702,122 @@ nav.adaptive .styled__border__button:nth-child(2) {
     #application__section .download__application__button {
         font-size: 16px;
         line-height: 16px;
-        padding:16px 32px 16px 32px;
+        padding: 16px 32px 16px 32px;
+    }
+}
+
+#faq__section {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 90px;
+}
+
+#faq__section p {
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#faq__section .new__question__button__container {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+}
+
+#faq__section .new__question__button__container .new__question__button {
+    padding: 13px 12px 13px 12px;
+    gap: 12px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 16.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#faq__section .questions__container {
+    position: relative;
+    display: grid;
+    grid-template-columns: .5fr .5fr;
+    grid-template-rows: auto;
+    gap: 24px 24px;
+    margin-top: 26px;
+}
+
+#faq__section .questions__container .question__card {
+    position: relative;
+    padding: 16px;
+    border-radius: 16px;
+    display: flex;
+    background: #F5F9FF;
+    justify-content: space-between;
+    height: fit-content;
+}
+
+#faq__section .questions__container .question__card .question__content {
+    display: flex;
+    flex-direction: column;
+}
+
+#faq__section .questions__container .question__card button {
+    outline: none;
+    border: none;
+    background: none;
+    cursor: pointer;
+    transition: all .3s;
+}
+
+#faq__section .questions__container .question__card button.active {
+    rotate: 135deg
+}
+
+#faq__section .questions__container .question__card .question__card__text__container {
+    display: flex;
+    flex-direction: column;
+}
+
+#faq__section .questions__container .question__card .question__card__text__container .question__title {
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 28.8px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    margin-bottom: 12px;
+}
+
+#faq__section .questions__container .question__card .question__card__text__container .answer__to__question {
+    padding-top: 16px;
+    border-top: 1px solid #0F000026;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    #faq__section p {
+        font-size: 19px;
+        font-weight: 700;
+        line-height: 22.8px;
+        letter-spacing: -0.02em;
+    }
+
+    #faq__section .questions__container {
+        grid-template-columns: 1fr;
+    }
+
+    #faq__section .questions__container .question__card .question__card__text__container .question__title {
+        font-size: 14px;
+        font-weight: 500;
+        line-height: 16.8px;
+        letter-spacing: -0.02em;
+    }
+
+    #faq__section .questions__container .question__card .question__card__text__container .answer__to__question {
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 15.4px;
+        letter-spacing: -0.02em;
     }
 }
