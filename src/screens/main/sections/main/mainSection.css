@@ -126,13 +126,13 @@
         width: 50%;
     }
 
-    nav.dekstop button {
+    .main__page__navigation.dekstop button {
         font-size: 12px;
     }
 }
 
 @media (max-width: 1024px) {
-    nav.dekstop button {
+    .main__page__navigation.dekstop button {
         font-size: 10px;
         
     }
@@ -164,7 +164,7 @@
 }
 
 @media (max-width: 860px) {
-    nav.adaptive {
+    .main__page__navigation.adaptive {
         display: flex;
     }
 

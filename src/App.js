@@ -24,7 +24,12 @@ const ScrollToTops = (props) => {
 const { get } = new LocalStorage;
 
 function ProtectedRoute({children}) {
-  
+  let access = get('accessToken');
+  let refresh = get('refreshToken');
+
+  if (!access && !refresh) {
+    return <Navigate to="/auth" replace />
+  }
   return children 
 }
 
@@ -46,18 +51,18 @@ function App() {
         <div className="App">
             <ReactNotifications />
             <Routes>
+                <Route path='/main' element={
+                    <Main/>
+                }/>
                 <Route path="/" element={
                   <ProtectedRoute>
                     <Home />
                   </ProtectedRoute>
                 } />
-                <Route path='/main' element={
-                  <Main/>
-                }></Route>
                 <Route path="/privacy-policy" element={
-                  <AlreadyReg>
+                  // <AlreadyReg>
                     <Privacy />
-                   </AlreadyReg>
+                  // </AlreadyReg>
                 } exact/>
                 <Route path="/auth" element={
                   <AlreadyReg>

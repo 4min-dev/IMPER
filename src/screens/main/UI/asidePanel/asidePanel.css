@@ -11,7 +11,7 @@
     align-items: end;
 }
 
-aside {
+.main__page__aside__panel {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,7 +22,7 @@ aside {
     border-radius: 5px;
 }
 
-aside button {
+.main__page__aside__panel button {
     border: none;
     outline: none;
     background:none;
@@ -33,7 +33,7 @@ aside button {
     text-align: left;
 }
 
-aside .close__button {
+.main__page__aside__panel .close__button {
     font-weight: 700;
     margin-bottom: 40px;
 }

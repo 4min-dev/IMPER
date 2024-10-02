@@ -179,13 +179,13 @@ export const Main = () => {
   };
 
   return (
-    <>
+    <div className="main__page">
       {isMobilePanel && <AsidePanel
         indexes={indexes}
         asidePanelHandler={mobilePanelHandler}
         setCurrIndex={setCurrIndex}
         scrollToSection={scrollToSection} />}
-      <header>
+      <header className='main__page__header'>
         <div className='header__logo'>
           <a href='https://dobrayaimperia.ru' className='border__button'>
             <img draggable={false} className='dekstop' src='https://www.figma.com/file/K5PsXovoHkhMJnpr4pFQzl/image/40f80a498c3617d04fb02ce20b4f1849053ab037' alt="Logo" />
@@ -193,7 +193,7 @@ export const Main = () => {
           </a>
         </div>
 
-        <nav className='adaptive'>
+        <nav className='adaptive main__page__navigation'>
           <div onClick={mobilePanelHandler} className='styled__border__button'>
             <img draggable={false} src={getIcon('BurgerMenu.svg')} alt='Menu' />
           </div>
@@ -207,7 +207,7 @@ export const Main = () => {
           </a>
         </nav>
 
-        <nav className='dekstop'>
+        <nav className='dekstop main__page__navigation'>
           {indexes.map((index) => (
             <button
               ref={el => buttonRefs.current[index.id - 1] = el}
@@ -232,7 +232,7 @@ export const Main = () => {
       <div ref={el => sectionRefs.current[3] = el}><FAQSection questions={questions} /></div>
       <div ref={el => sectionRefs.current[4] = el}><FeedBackSection feedbacks={feedbacks} /></div>
 
-      <footer>
+      <footer className='main__page__footer'>
         <img draggable={false} className='footer__image__to__left' src={getImage('blind_girl_with_dog.png')} alt='Left' />
         <img draggable={false} className='footer__image__to__right' src={getImage('girl_trains_a_dog.png')} alt='Right' />
         <div className='footer__partners__container'>
@@ -252,6 +252,6 @@ export const Main = () => {
           <span>2024</span>
         </div>
       </footer>
-    </>
+    </div>
   );
 };
