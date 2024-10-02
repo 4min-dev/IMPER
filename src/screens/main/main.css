@@ -247,7 +247,7 @@
     text-align: right;
 }
 
-@media (max-width:864px) {
+@media (max-width:1024px) {
     .main__page__footer {
         margin-top: 234px;
     }

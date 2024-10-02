@@ -29,7 +29,7 @@
     grid-area: two;
 }
 
-@media (max-width:864px) {
+@media (max-width:1024px) {
     #feedback__section p {
         font-size: 19px;
         line-height: 22.8px;
