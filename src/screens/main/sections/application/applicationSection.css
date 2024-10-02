@@ -1,0 +1,123 @@
+#application__section {
+    position: relative;
+    width: 100%;
+    min-height: 384px;
+    height: fit-content;
+    background: #55A2FF;
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 120px;
+    overflow: hidden;
+}
+
+#application__section .blob__left,
+#application__section .blob__right {
+    position: absolute;
+}
+
+#application__section .blob__left {
+    left: 0;
+    top: 0;
+}
+
+#application__section .blob__right {
+    right: 0;
+    bottom: 0;
+}
+
+#application__section .about__application {
+    display: flex;
+    align-items: center;
+    z-index: 1;
+}
+
+#application__section .about__application .styled__button {
+    padding: 12px;
+    border-radius: 16px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#application__section .about__application .styled__button:nth-child(2) {
+    margin-left: 16px;
+}
+
+#application__section p {
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 50.4px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    z-index: 1;
+    color: white;
+    width: 50vw;
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+#application__section .download__application__button {
+    text-decoration: none;
+    padding: 23px 32px 23px 32px;
+    border-radius: 16px;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    z-index: 1;
+}
+
+@media (max-width:1200px) {
+    #application__section {
+        border-radius: 32px;
+        height: 620px;
+
+    }
+
+    #application__section .blob__left {
+        top: -12px;
+        width: 220.9px;
+        height: 185.24px;
+    }
+
+    #application__section .blob__right {
+        width: 213.67px;
+        height: 175.19px;
+        gap: 0px;
+        opacity: 0px;
+    }
+
+    #application__section .about__application .styled__button {
+        padding: 8px 12px 8px 12px;
+        gap: 10px;
+        border-radius: 10px;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 15.4px;
+        letter-spacing: -0.02em;
+    }
+
+    #application__section .about__application .styled__button:nth-child(2) {
+        margin-left: 4px;
+    }
+
+    #application__section p {
+        width: 262px;
+        height: 100px;
+        font-size: 21px;
+        font-weight: 700;
+        line-height: 25.2px;
+        letter-spacing: -0.02em;
+    }
+
+    #application__section .download__application__button {
+        font-size: 16px;
+        line-height: 16px;
+        padding: 16px 32px 16px 32px;
+    }
+}

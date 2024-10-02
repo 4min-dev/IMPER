@@ -1,0 +1,312 @@
+#main__section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#main__section>.landing {
+    display: flex;
+    flex-direction: column;
+}
+
+#main__section .section__title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#main__section .section__description {
+    width: 55%;
+    top: 408px;
+    left: 48px;
+    margin: 20px 0px 0px 7px;
+}
+
+#main__section .landing__clickable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+}
+
+#main__section .landing__clickable>.styled__button {
+    font-size: 20px;
+    padding: 27px 32.5px 27px 32.5px;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+#main__section .landing__clickable>.styled__border__button {
+    margin-left: 8px;
+    padding: 20px;
+}
+
+#main__section .landing__logo {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 986px;
+    height: 504px;
+    z-index: -1;
+}
+
+#main__section .landing__logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+#main__section .landing .button__to__down {
+    position: relative;
+    display: flex;
+    align-items: start;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 139px;
+    margin-left: 19px;
+}
+
+#main__section {
+    position: relative;
+    display: flex;
+    align-items: center;
+    height: 100vh;
+}
+
+#main__section>.landing {
+    display: flex;
+    flex-direction: column;
+}
+
+#main__section .section__title {
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+#main__section .section__description {
+    width: 55%;
+    top: 408px;
+    left: 48px;
+    margin: 20px 0px 0px 7px;
+}
+
+#main__section .landing__clickable {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top: 44px;
+}
+
+#main__section .landing__clickable>.styled__button {
+    font-size: 20px;
+    padding: 27px 32.5px 27px 32.5px;
+    text-decoration: none;
+    border-radius: 16px;
+}
+
+#main__section .landing__clickable>.styled__border__button {
+    margin-left: 8px;
+    padding: 20px;
+}
+
+#main__section .landing__logo {
+    position: absolute;
+    right: 0;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    width: 986px;
+    height: 504px;
+    z-index: -1;
+}
+
+#main__section .landing__logo>img {
+    width: 100%;
+    height: 100%;
+}
+
+#main__section .landing .button__to__down {
+    position: relative;
+    display: flex;
+    align-items: start;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    margin-top: 139px;
+    margin-left: 19px;
+}
+
+@media (max-width: 1600px) {
+    #main__section .landing__logo>img {
+        width: 75%;
+    }
+}
+
+@media (max-width: 1350px) {
+    #main__section .landing__logo>img {
+        width: 65%;
+        height: 85%;
+    }
+}
+
+@media (max-width: 1200px) {
+
+    #main__section {
+        flex-direction: column;
+        /* Изменяем направление на колонку */
+        height: auto;
+        /* Позволяем высоте подстраиваться под контент */
+    }
+
+    .section__title {
+        font-size: 36px
+            /* Уменьшаем размер шрифта */
+    }
+
+    .section__description {
+        width: 70%;
+        /* Увеличиваем ширину описания */
+    }
+
+    #main__section .landing__logo>img {
+        width: 60%;
+        height: 60%;
+    }
+
+    .section__title {
+        font-weight: 700;
+    }
+
+    .section__description {
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 28px;
+        letter-spacing: -0.02em;
+        text-align: left;
+        color: #0F0000;
+    }
+}
+
+@media (max-width: 1180px) {
+
+    #main__section .landing__logo>img {
+        width: 50%;
+    }
+
+    nav.dekstop button {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 1024px) {
+    nav.dekstop button {
+        font-size: 10px;
+        padding: 5px 10px 5px 10px;
+    }
+
+    #main__section .landing {
+        margin-top: 40px;
+    }
+
+    #main__section .landing__logo {
+        width: 90%;
+        height: 90%;
+    }
+
+    #main__section .section__title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.6px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    #main__section .landing .button__to__down {
+        display: none;
+    }
+
+    #main__section .landing__clickable {
+        margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 860px) {
+    nav.adaptive {
+        display: flex;
+    }
+
+    #main__section .section__title {
+        font-size: 28px;
+        font-weight: 700;
+        line-height: 33.6px;
+        letter-spacing: -0.02em;
+        text-align: left;
+    }
+
+    #main__section .section__title__styled {
+        padding: 7px 10px 7px 10px;
+        top: 148px;
+        left: 16px;
+        gap: 0px;
+        border-radius: 12px;
+        white-space: nowrap;
+    }
+
+    #main__section .landing {
+        align-items: center;
+    }
+
+    #main__section .landing__logo {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        top: 57%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #main__section .landing__logo img {
+        width: 234px;
+        height: 131px;
+        gap: 0px;
+    }
+
+    #main__section .landing__clickable {
+        margin-top: 110px;
+        margin-bottom: 87px;
+        width: 100%;
+    }
+
+    #main__section .landing__clickable a {
+        width: 100%;
+        margin-top: 30px;
+        padding: 16px ;
+        gap: 20px;
+        border-radius: 16px;
+        opacity: 0px;
+        font-size: 16px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: center;
+        
+    }
+
+    #main__section .section__description {
+        display: none;
+    }
+
+    #main__section .landing .styled__border__button {
+        display: none;
+    }
+}

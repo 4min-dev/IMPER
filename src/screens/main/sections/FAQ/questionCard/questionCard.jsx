@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
-import getIcon from '../../../assets/getIcon'
+import './questionCard.css'
+import getIcon from '../../../../../assets/getIcon'
 
 export const QuestionCard = ({question}) => {
 
