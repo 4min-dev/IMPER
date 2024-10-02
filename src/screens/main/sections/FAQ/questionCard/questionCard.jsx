@@ -21,7 +21,7 @@ export const QuestionCard = ({question}) => {
 
             <div className="get__answer__button__container">
             <button type='button' className={isQuestionUnfolding ? 'active' : 'not-active'}>
-                <img src={getIcon('Plus.svg')} alt='Open the question' onClick={questionButtonHandler} />
+                <img draggable={false} src={getIcon('Plus.svg')} alt='Open the question' onClick={questionButtonHandler} />
             </button>
             </div>
         </div>

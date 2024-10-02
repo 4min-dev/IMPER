@@ -5,7 +5,7 @@ import getImage from '../../../../assets/getImage'
 export const ApplicationSection = () => {
     return (
         <section id='application__section'>
-            <img className='blob__left' src={getImage('Blob_1.png')} alt='Blob_1' />
+            <img draggable={false} className='blob__left' src={getImage('Blob_1.png')} alt='Blob_1' />
             <div className='about__application'>
                 <div className='styled__button aqua'>
                     <span className='dekstop'>Доступно для Android и IOS</span>
@@ -23,7 +23,7 @@ export const ApplicationSection = () => {
                 Скачать приложение
             </a>
 
-            <img className='blob__right' src={getImage('Blob_2.png')} alt='Blob_2' />
+            <img draggable={false} className='blob__right' src={getImage('Blob_2.png')} alt='Blob_2' />
         </section>
     )
 }

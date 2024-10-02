@@ -1,0 +1,84 @@
+.feedback__card {
+    padding: 24px;
+    border-radius: 28px;
+    border: 1px solid #E5E7EB;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feedback__card .feedback__title {
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.feedback__card:nth-child(1) .feedback__title {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+}
+
+.feedback__card:not(:nth-child(1)) {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 25.2px;
+}
+
+.feedback__card .feedback__author__container {
+    display: flex;
+    align-items: center;
+    margin-top: 24px;
+}
+
+.feedback__card .feedback__author__avatar {
+    position: relative;
+    width: 60px;
+    height: 60px;
+    border-radius: 1000px;
+    overflow: hidden;
+}
+
+.feedback__card .feedback__author__avatar img {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.feedback__card .feedback__author {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 12px;
+}
+
+.feedback__card .feedback__author__name {
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 33.6px;
+    letter-spacing: -0.02em;
+    text-align: left;
+    color: #0F0000;
+    margin-bottom: 6px;
+}
+
+.feedback__card .author__social__network__container {
+    display: flex;
+    align-items: center;
+    color: #0F0000;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    letter-spacing: -0.02em;
+    text-align: left;
+}
+
+.feedback__card .author__social__network__container img {
+    width: 16px;
+    height: 16px;
+    margin-right: 6px;
+}

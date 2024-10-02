@@ -1,7 +1,7 @@
 import React from 'react'
 import './getStartedSection.css'
-import getImage from '../../../../../assets/getImage'
-import getIcon from '../../../../../assets/getIcon'
+import getImage from '../../../../assets/getImage'
+import getIcon from '../../../../assets/getIcon'
 
 export const GetStartedSection = () => {
     return (
@@ -16,30 +16,30 @@ export const GetStartedSection = () => {
             <div className='get__started__cards__container'>
                 <div className='get__started__card'>
                     <span className='card__id'>01</span>
-                    <img src={getImage('image__1.png')} alt='Card logo' />
+                    <img draggable={false} src={getImage('image__1.png')} alt='Card logo' />
                     <div className='card__button__wrapper'>
                         Зарегистрируйтесь на сайте
                         <a href='#' >
-                            <img src={getIcon('LinkBlue.svg')} alt='Sign up' />
+                            <img draggable={false} src={getIcon('LinkBlue.svg')} alt='Sign up' />
                         </a>
                     </div>
                 </div>
 
                 <div className='get__started__card'>
                     <span className='card__id'>02</span>
-                    <img src={getImage('image__2.png')} alt='Card logo' />
+                    <img draggable={false} src={getImage('image__2.png')} alt='Card logo' />
                     <div className='card__button__wrapper'>
                         Выберите ближайший приют
                         <a href='#' >
-                            <img src={getIcon('GeoBlue.svg')} alt='Geo' />
+                            <img draggable={false} src={getIcon('GeoBlue.svg')} alt='Geo' />
                         </a>
                     </div>
                 </div>
 
                 <div className='get__started__card'>
                     <span className='card__id'>03</span>
-                    <img className='dekstop' src={getImage('image__3.png')} alt='Card logo' />
-                    <img className='adaptive' src={getImage('image__3__adaptive.png')} alt='Card logo' />
+                    <img draggable={false} className='dekstop' src={getImage('image__3.png')} alt='Card logo' />
+                    <img draggable={false} className='adaptive' src={getImage('image__3__adaptive.png')} alt='Card logo' />
                     <div className='card__button__wrapper'>
                         Запись на время и дату, в которую вы хотите прийти и помочь
                         <a href='#' className='styled__button blue'>
