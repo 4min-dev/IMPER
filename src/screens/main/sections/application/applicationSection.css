@@ -42,6 +42,7 @@
     line-height: 22.4px;
     letter-spacing: -0.02em;
     text-align: left;
+    cursor: initial;
 }
 
 #application__section .about__application .styled__button:nth-child(2) {

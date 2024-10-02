@@ -130,14 +130,14 @@ nav.dekstop button.active {
 
 nav.adaptive .styled__border__button {
     border-radius: 6.05px;
-    padding: 10px;
+    padding: 8px;
     display: flex;
     align-items: center;
 }
 
 nav.adaptive .styled__border__button img {
-    width: 25px;
-    height: 25x;
+    width: 16.33px;
+    height: 16.33px;
     top: 8.17px;
     left: 5.83px;
     gap: 0px;
@@ -166,7 +166,7 @@ nav.adaptive .styled__border__button:nth-child(2) {
     border-radius: 16px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 864px) { /* Мобилки с планшетами */
     .dekstop {
         display: none !important;
         /* Добавление !important для применения к классам по типу classname="dekstop someClassname" */
@@ -211,7 +211,10 @@ footer .footer__partners__container {
 
 footer .footer__partners__container .footer__partner__personal__identity {
     text-align: left;
-    color:rgba(0,0,0,60%)
+    color: rgba(0, 0, 0, 60%);
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
 }
 
 footer .footer__partners__container .footer__partner__email {
@@ -221,8 +224,11 @@ footer .footer__partners__container .footer__partner__email {
 }
 
 footer a {
-    color:rgba(0,0,0,60%);
+    color: rgba(0, 0, 0, 60%);
     text-decoration: none;
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
 }
 
 footer .partners__logos {
@@ -234,6 +240,69 @@ footer .partners__logos {
 footer .copiryting__container {
     display: flex;
     flex-direction: column;
-    align-items: end;
-    color:rgba(0,0,0,60%)
+    color: rgba(0, 0, 0, 60%);
+    font-size: 18px;
+    line-height: 25.2px;
+    letter-spacing: -0.02em;
+    text-align: right;
+}
+
+@media (max-width:864px) {
+    footer {
+        margin-top: 234px;
+    }
+
+    footer .footer__image__to__left {
+        width: 203px;
+        height: 203px;
+        bottom: 95%;
+    }
+
+    footer .footer__image__to__right {
+        width: 235px;
+        height: 235px;
+        bottom: 92%;
+    }
+
+    footer {
+        height: 296px;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    footer a {
+        text-decoration: underline;
+        text-underline-offset: 5px;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+
+    footer .copiryting__container {
+        align-items: center;
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    footer .footer__partners__container .footer__partner__personal__identity {
+        font-size: 14px;
+        line-height: 19.6px;
+    }
+
+    footer .footer__partners__container .footer__partner__email {
+        font-size: 12px;
+        line-height: 16.8px;
+    }
+}
+
+@media (max-width:464px) {
+    footer .footer__image__to__left {
+        left: -51px
+    }
+
+    footer .footer__image__to__right {
+        right: -72px
+    }
 }

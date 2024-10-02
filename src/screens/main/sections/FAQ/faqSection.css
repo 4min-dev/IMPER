@@ -17,6 +17,11 @@
     width: 100%;
     display: flex;
     justify-content: end;
+    margin-top: 40px;
+}
+
+#faq__section .new__question__button__container.adaptive {
+    display: none;
 }
 
 #faq__section .new__question__button__container .new__question__button {
@@ -50,5 +55,10 @@
 
     #faq__section .questions__container {
         grid-template-columns: 1fr;
+    }
+
+    #faq__section .new__question__button__container.adaptive {
+        display: flex;
+        justify-content: center;
     }
 }

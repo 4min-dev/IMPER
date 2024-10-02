@@ -19,7 +19,7 @@ export const GetStartedSection = () => {
                     <img draggable={false} src={getImage('image__1.png')} alt='Card logo' />
                     <div className='card__button__wrapper'>
                         Зарегистрируйтесь на сайте
-                        <a href='#' >
+                        <a href='https://dobrayaimperia.ru/reg' >
                             <img draggable={false} src={getIcon('LinkBlue.svg')} alt='Sign up' />
                         </a>
                     </div>

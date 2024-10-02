@@ -19,7 +19,7 @@ export const ApplicationSection = () => {
 
             <p>Скачайте наше веб-приложение, чтобы помогать приютам было ещё проще!</p>
 
-            <a href='#' className='styled__button pink download__application__button'>
+            <a href='https://dobrayaimperia.ru/reg' className='styled__button pink download__application__button'>
                 Скачать приложение
             </a>
 

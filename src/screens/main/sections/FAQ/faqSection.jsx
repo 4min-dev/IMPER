@@ -7,13 +7,19 @@ export const FAQSection = ({questions}) => {
         <section id='faq__section'>
             <p>Вопрос - ответ 🦮🐈</p>
             <div className='new__question__button__container dekstop'>
-                <a href='#' className='styled__button blue new__question__button'>
+                <a href='https://t.me/kushneriov_kirill' className='styled__button blue new__question__button'>
                     Задать вопрос
                 </a>
             </div>
 
             <div className='questions__container'>
                 {questions.length > 0 && questions.map((question) => <QuestionCard question={question} />)}
+            </div>
+
+            <div className='new__question__button__container adaptive'>
+                <a href='https://t.me/kushneriov_kirill' className='styled__button blue new__question__button'>
+                    Задать вопрос
+                </a>
             </div>
         </section>
     )

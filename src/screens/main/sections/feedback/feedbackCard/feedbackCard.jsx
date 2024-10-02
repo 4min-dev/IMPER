@@ -5,11 +5,11 @@ import getIcon from '../../../../../assets/getIcon'
 export const FeedbackCard = ({ feedback }) => {
 
     function getAuthorSocialNetworkFrom() {
-        if (feedback.from.includes('vk')) {
+        if (feedback.from.toLowerCase().includes('vk')) { // проверка без учета регистра
             return getIcon('Vk.svg')
         }
 
-        if (feedback.from.includes('telegram')) {
+        if (feedback.from.toLowerCase().includes('telegram')) { // проверка без учета регистра
             return getIcon('Telegram.svg')
         }
     }

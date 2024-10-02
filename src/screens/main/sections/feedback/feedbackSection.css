@@ -15,10 +15,10 @@
 }
 
 .feedback__cards__container {
-   position: relative;
-   display: grid;
-   grid-template-areas: "first first two";
-   gap:20px 20px;
+    position: relative;
+    display: grid;
+    grid-template-areas: "first first two";
+    gap: 20px 20px;
 }
 
 .feedback__card:nth-child(1) {
@@ -27,4 +27,29 @@
 
 .feedback__card:nth-child(2) {
     grid-area: two;
+}
+
+@media (max-width:864px) {
+    #feedback__section p {
+        font-size: 19px;
+        line-height: 22.8px;
+        margin-top: 32px;
+    }
+
+    #feedback__section p::after {
+       content: " 💬";
+    }
+
+    .feedback__cards__container {
+        grid-template-columns: 1fr;
+        grid-template-areas: none;
+    }
+
+    .feedback__card:nth-child(1) {
+        grid-area: initial;
+    }
+
+    .feedback__card:nth-child(2) {
+        grid-area: initial;
+    }
 }

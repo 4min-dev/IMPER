@@ -63,80 +63,7 @@
 #main__section .landing .button__to__down {
     position: relative;
     display: flex;
-    align-items: start;
-    background: none;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    margin-top: 139px;
-    margin-left: 19px;
-}
-
-#main__section {
-    position: relative;
-    display: flex;
-    align-items: center;
-    height: 100vh;
-}
-
-#main__section>.landing {
-    display: flex;
-    flex-direction: column;
-}
-
-#main__section .section__title {
-    font-size: 60px;
-    font-weight: 700;
-    line-height: 72px;
-    letter-spacing: -0.02em;
-    text-align: left;
-}
-
-#main__section .section__description {
-    width: 55%;
-    top: 408px;
-    left: 48px;
-    margin: 20px 0px 0px 7px;
-}
-
-#main__section .landing__clickable {
-    position: relative;
-    display: flex;
-    align-items: center;
-    margin-top: 44px;
-}
-
-#main__section .landing__clickable>.styled__button {
-    font-size: 20px;
-    padding: 27px 32.5px 27px 32.5px;
-    text-decoration: none;
-    border-radius: 16px;
-}
-
-#main__section .landing__clickable>.styled__border__button {
-    margin-left: 8px;
-    padding: 20px;
-}
-
-#main__section .landing__logo {
-    position: absolute;
-    right: 0;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-    width: 986px;
-    height: 504px;
-    z-index: -1;
-}
-
-#main__section .landing__logo>img {
-    width: 100%;
-    height: 100%;
-}
-
-#main__section .landing .button__to__down {
-    position: relative;
-    display: flex;
+    width: fit-content;
     align-items: start;
     background: none;
     outline: none;
@@ -163,19 +90,15 @@
 
     #main__section {
         flex-direction: column;
-        /* Изменяем направление на колонку */
         height: auto;
-        /* Позволяем высоте подстраиваться под контент */
     }
 
     .section__title {
         font-size: 36px
-            /* Уменьшаем размер шрифта */
     }
 
     .section__description {
         width: 70%;
-        /* Увеличиваем ширину описания */
     }
 
     #main__section .landing__logo>img {
@@ -211,7 +134,7 @@
 @media (max-width: 1024px) {
     nav.dekstop button {
         font-size: 10px;
-        padding: 5px 10px 5px 10px;
+        
     }
 
     #main__section .landing {

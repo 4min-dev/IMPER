@@ -1,8 +1,9 @@
 import React from 'react'
 import './mainSection.css'
 import getIcon from '../../../../assets/getIcon'
+import getImage from '../../../../assets/getImage'
 
-export const MainSection = () => {
+export const MainSection = ({ scrollToMiddle }) => {
     return (
         <section id='main__section'>
             <div className='landing'>
@@ -12,22 +13,22 @@ export const MainSection = () => {
                     Империя Добра- это движение волонтёров, помогающее приютам животных. Становись частью нашей команды!
                 </div>
                 <div className='landing__logo'>
-                    <img draggable={false} src='https://s3-alpha-sig.figma.com/img/beb7/2f6f/e037040ec3f53081448ced4f717fa71b?Expires=1728259200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YqgdYmqOOdNlBZg9fILKAf5-NvpUOrCJlC9mwJwuoaGVQpwRSgX7A1QHhFWGEoNiRUG2LdBrKARJPWM55lPY55w7h2sMMuYALP5Ws~zV~c-1yQg5FLv5KxmHkrlTAPRp1ZhaEwWn5BenEohygXNPMujIlXEW9V~Z~aGMgl1BacbpiKhMXLa35z0C5Kx4jBQGeDzgGp54E8YKCaHxbX1rb1hZjziWkO8s1uOZxApnFW9C0Gat9TNl~vldgS4GljqHAvPyT02uSohwUDNXnUX0hkyYouw137dxFca3rX3sFdsm~6bbUuhdGFbPbkxY1uZcU~YvYJnQpFnJA26K~bxOMQ__' alt='Landing logo' />
+                    <img draggable={false} src={getImage('the__girl__stroking.png')} alt='Landing logo' />
                 </div>
 
                 <div className='landing__clickable'>
-                    <a href='#' className='styled__button blue'>Стать волонтёром</a>
+                    <a href='https://dobrayaimperia.ru/reg' className='styled__button blue'>Стать волонтёром</a>
 
                     <a href='#' className='styled__border__button'>
                         <img draggable={false} src={getIcon('Vk.svg')} alt='VK' />
                     </a>
 
-                    <a href='#' className='styled__border__button'>
+                    <a href='https://t.me/kushneriov_kirill' className='styled__border__button'>
                         <img draggable={false} src={getIcon('Telegram.svg')} alt='Telegram' />
                     </a>
                 </div>
 
-                <button type='button' className='button__to__down'>
+                <button onClick={scrollToMiddle} type='button' className='button__to__down'>
                     <img draggable={false} src={getIcon('DownArrow.svg')} alt='Down' />
                 </button>
             </div>

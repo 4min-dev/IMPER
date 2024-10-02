@@ -82,3 +82,33 @@
     height: 16px;
     margin-right: 6px;
 }
+
+@media (max-width:864px) {
+
+    .feedback__card .feedback__title,
+    .feedback__card:nth-child(1) .feedback__title {
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 19.6px;
+    }
+
+    .feedback__card .feedback__author__avatar {
+        width: 44px;
+        height: 44px;
+    }
+
+    .feedback__card .feedback__author__name {
+        font-size: 16px;
+        line-height: 22.4px;
+    }
+
+    .feedback__card .author__social__network__container {
+        font-size: 11px;
+        line-height: 15.4px;
+    }
+
+    .feedback__card .author__social__network__container img {
+        width: 14px;
+        height: 14px;
+    }
+}
