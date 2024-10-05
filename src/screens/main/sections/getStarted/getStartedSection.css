@@ -197,6 +197,7 @@
         width: 153px;
         gap: 0px;
         border-radius: 9px;
+        padding:2px 7px 2px 7px;
     }
 
     #get__started__section .section__description {
