@@ -78,11 +78,23 @@
 }
 
 .main__page__header {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
+    width: calc(100% - 96px);
+    z-index: 30;
+}
+
+@media (max-width:1200px) {
+    .main__page__header {
+        width: calc(100% - 32px);
+    }
+}
+
+.header__fixed .main__page__navigation.dekstop {
+    background: rgba(255, 255, 255, 100%);
 }
 
 .main__page__header .header__logo {
@@ -124,6 +136,10 @@
     text-align: center;
 }
 
+.main__page__navigation.dekstop button .nav__button__text {
+    z-index: 2;
+}
+
 .main__page__navigation.dekstop button.active {
     color: white;
 }
@@ -159,14 +175,15 @@
     position: absolute;
     height: 100%;
     top: 0;
-    z-index: -1;
     /* Чтобы текст кнопки был над кругом */
     transition: transform 0.3s ease, width 0.3s ease;
     /* Плавный переход */
     border-radius: 16px;
 }
 
-@media (max-width: 864px) { /* Мобилки с планшетами */
+@media (max-width: 864px) {
+
+    /* Мобилки с планшетами */
     .dekstop {
         display: none !important;
         /* Добавление !important для применения к классам по типу classname="dekstop someClassname" */

@@ -111,20 +111,20 @@ const feedbacks = [
 const smoothScroll = (element) => {
   const elementToScroll = document.querySelector(`${element}`)
   elementToScroll.scrollIntoView({ behavior: 'smooth', block: 'center' });
- }
+}
 
- const scrollToSection = (section__id) => {
-   smoothScroll(`#${section__id}`)
+const scrollToSection = (section__id) => {
+  smoothScroll(`#${section__id}`)
 };
 
- const scrollToMiddle = () => {
-   const middleScreen = window.innerHeight
+const scrollToMiddle = () => {
+  const middleScreen = window.innerHeight / 2
 
-   window.scrollBy({
-     top:middleScreen,
-     behavior:'smooth'
-   })
- };
+  window.scrollBy({
+    top: middleScreen,
+    behavior: 'smooth'
+  })
+};
 
 export const Main = () => {
 
@@ -142,6 +142,7 @@ export const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (isScrolling.current) return; // Игнорировать, если сейчас прокручиваем
+
       sectionRefs.current.forEach((section, index) => {
         if (
           section &&
@@ -207,7 +208,7 @@ export const Main = () => {
                 setCurrIndex(index);
                 scrollToSection(index.sectionRef);
               }}>
-              {index.name}
+              <span className='nav__button__text'>{index.name}</span>
             </button>
           ))}
           <div className='styled__button blue circle' ref={circleRef} />
