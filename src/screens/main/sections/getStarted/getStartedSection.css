@@ -138,6 +138,13 @@
     width: fit-content;
 }
 
+@media (max-width: 1380px) {
+    #get__started__section>.get__started__cards__container {
+        grid-template-columns: .5fr .5fr 1fr;
+        grid-template-rows: 200px;
+    }
+}
+
 @media (max-width: 1024px) {
     #get__started__section .section__title {
         font-size: 28px;

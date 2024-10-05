@@ -1,5 +1,14 @@
+@keyframes aside__overlay__opacity {
+    from {
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
 .aside__overlay {
     position: fixed;
+    animation: aside__overlay__opacity .4s;
     left:0;
     right:0;
     top:0;
@@ -11,9 +20,24 @@
     align-items: end;
 }
 
+.aside__overlay.closing {
+    opacity: 0;
+}
+
+@keyframes aside__panel__translate {
+    from {
+        left:100%;
+    }
+
+    to {
+        left:0;
+    }
+}
+
 .main__page__aside__panel {
     position: relative;
     display: flex;
+    animation: aside__panel__translate .4s;
     flex-direction: column;
     padding:20px;
     min-width: 40vw;

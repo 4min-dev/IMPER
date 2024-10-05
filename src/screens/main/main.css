@@ -32,6 +32,12 @@
     background: #55A2FF;
 }
 
+@media (max-width:1200px) {
+    .main__page::after {
+        display: none;
+    }
+}
+
 .section__title {
     font-weight: 700;
 }
@@ -149,6 +155,7 @@
     padding: 8px;
     display: flex;
     align-items: center;
+    background:rgba(255, 255, 255, 100%)
 }
 
 .main__page__navigation.adaptive .styled__border__button img {
