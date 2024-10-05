@@ -1,0 +1,22 @@
+
+/* @media (max-width: 540px) {
+    .input-item {
+        margin-bottom: 20px;
+    }
+} */
+
+.input-item__label {
+    margin: 0 0 6px 19px;
+
+    color: #696969;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* @media(max-width: 540px) {
+    .input-item {
+        margin: 10px 0;
+    }
+} */

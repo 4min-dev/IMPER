@@ -1,0 +1,48 @@
+.event {
+    min-width: 122px;
+    height: 147px;
+
+    padding: 10px 5px 5px 5px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+    border-radius: 15px;
+    border: 1px solid #EFF1F7;
+    background: #FFF;
+
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.event--selected {
+    border: 1px solid green;
+}
+
+.event__name {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.event__image {
+    height: 70px;
+}
+
+.event__date {
+    width: 100%;
+    height: 29px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: var(--primary-color);
+    font-size: 12px;
+    font-weight: 600;
+
+    border-radius: 100px;
+    background: #EFF1F7;
+}
