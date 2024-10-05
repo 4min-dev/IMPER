@@ -93,30 +93,22 @@
         height: auto;
     }
 
-    .section__title {
-        font-size: 36px
+    #main__section .landing {
+        margin-top: 45px;
+    }
+
+    #main__section .section__title {
+        font-size: 48px;
     }
 
     .section__description {
         width: 70%;
-    }
-
-    #main__section .landing__logo>img {
-        width: 60%;
-        height: 60%;
-    }
-
-    .section__title {
-        font-weight: 700;
-    }
-
-    .section__description {
-        font-size: 20px;
-        font-weight: 400;
-        line-height: 28px;
-        letter-spacing: -0.02em;
-        text-align: left;
-        color: #0F0000;
+            font-size: 20px;
+            font-weight: 400;
+            line-height: 28px;
+            letter-spacing: -0.02em;
+            text-align: left;
+            color: #0F0000;
     }
 }
 
@@ -183,10 +175,6 @@
         gap: 0px;
         border-radius: 12px;
         white-space: nowrap;
-    }
-
-    #main__section .landing {
-        align-items: center;
     }
 
     #main__section .landing__logo {

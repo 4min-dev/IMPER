@@ -39,7 +39,7 @@
 .section__title__styled {
     background: #F696A0;
     border-radius: 24px;
-    padding: 0px 15px 5px 15px;
+    padding: 5px 15px 5px 15px;
     max-width: fit-content;
     color: white;
 }

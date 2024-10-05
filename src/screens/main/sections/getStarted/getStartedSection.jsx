@@ -31,7 +31,7 @@ export const GetStartedSection = () => {
                     <div className='card__button__wrapper'>
                         Выберите ближайший приют
                         <a href='#' >
-                            <img draggable={false} src={getIcon('GeoBlue.svg')} alt='Geo' />
+                            <img draggable={false} src={getIcon('GeoBlue1.svg')} alt='Geo' />
                         </a>
                     </div>
                 </div>
@@ -41,8 +41,8 @@ export const GetStartedSection = () => {
                     <img draggable={false} className='dekstop' src={getImage('image__3.png')} alt='Card logo' />
                     <img draggable={false} className='adaptive' src={getImage('image__3__adaptive.png')} alt='Card logo' />
                     <div className='card__button__wrapper'>
-                        Запись на время и дату, в которую вы хотите прийти и помочь
-                        <a href='#' className='styled__button blue'>
+                       <div className="text">Запись на время и дату, в которую вы хотите прийти и помочь</div>
+                        <a href='https://dobrayaimperia.ru/' className='styled__button blue'>
                             Принять участие
                         </a>
                     </div>
