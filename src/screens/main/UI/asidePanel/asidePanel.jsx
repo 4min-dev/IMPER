@@ -2,10 +2,21 @@ import React from 'react'
 import './asidePanel.css'
 
 export const AsidePanel = ({indexes, asidePanelHandler, setCurrIndex, scrollToSection}) => {
+
+  let [isAsideClosing, setAsideClosing] = React.useState(false)
+
+  function asidePanelActiveStatusHandler() {
+    setAsideClosing(!isAsideClosing)
+
+    setTimeout(() => {
+      asidePanelHandler()
+    }, 350);
+  }
+
   return (
-    <div className='aside__overlay' onClick={asidePanelHandler}>
+    <div className={`aside__overlay ${isAsideClosing ? 'closing' : ''}`} onClick={asidePanelActiveStatusHandler}>
         <aside className='main__page__aside__panel' onClick={(e) => e.stopPropagation()}>
-        <div className='close__button' onClick={asidePanelHandler}>X</div>
+        <div className='close__button'  onClick={asidePanelActiveStatusHandler}>X</div>
         {indexes.map((index) => (
             <button
               key={index.id}
@@ -13,7 +24,7 @@ export const AsidePanel = ({indexes, asidePanelHandler, setCurrIndex, scrollToSe
               onClick={() => {
                 setCurrIndex(index);
                 scrollToSection(index.sectionRef);
-                asidePanelHandler()
+                asidePanelActiveStatusHandler()
               }}
             >
               {index.name}

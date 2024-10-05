@@ -6,6 +6,7 @@
     background: #F5F9FF;
     justify-content: space-between;
     height: fit-content;
+    cursor: pointer;
 }
 
 .question__card .question__content {
@@ -17,7 +18,6 @@
     outline: none;
     border: none;
     background: none;
-    cursor: pointer;
     transition: all .3s;
 }
 
@@ -29,6 +29,7 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .question__card .question__card__text__container .question__title {
@@ -40,10 +41,18 @@
     margin-bottom: 12px;
 }
 
-.question__card .question__card__text__container .answer__to__question {
-    padding-top: 16px;
-    border-top: 1px solid #0F000026;
+.question__card .answer__to__question {
+    overflow: hidden;
+    max-height: 0; /* Состояние закрыто */
+    padding-top: 0; /* Состояние закрыто */
     width: 100%;
+    transition: max-height .3s ease, padding-top .4s ease; /* Анимация */
+}
+
+.question__card .answer__to__question.active {
+    max-height: 100px; /* Настройте при необходимости */
+    padding-top: 16px; /* Расширенное состояние */
+    border-top: 1px solid #0F000026; /* Граница при открытии */
 }
 
 @media (max-width: 1024px) {
