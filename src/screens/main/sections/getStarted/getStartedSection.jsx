@@ -31,7 +31,7 @@ export const GetStartedSection = () => {
                     <div className='card__button__wrapper'>
                         Выберите ближайший приют
                         <a href='#' >
-                            <img draggable={false} src={getIcon('GeoBlue1.svg')} alt='Geo' />
+                            <img draggable={false} src={getIcon('GeoBlue.svg')} alt='Geo' />
                         </a>
                     </div>
                 </div>

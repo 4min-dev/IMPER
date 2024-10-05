@@ -78,11 +78,20 @@
 }
 
 .main__page__header {
-    position: relative;
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin-top: 40px;
+    top:0;
+    width: calc(100% - 96px);
+    z-index: 3;
+}
+
+@media (max-width:1200px) {
+    .main__page__header {
+        width: calc(100% - 32px);
+    }
 }
 
 .main__page__header .header__logo {

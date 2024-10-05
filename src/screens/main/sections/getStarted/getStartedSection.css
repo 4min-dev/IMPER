@@ -147,6 +147,7 @@
 
     #get__started__section>.get__started__cards__container {
         grid-template-columns: .7fr .7fr 1fr;
+        grid-template-rows: 200px;
     }
 
     #get__started__section>.get__started__cards__container>.get__started__card:not(:nth-child(3))>.card__button__wrapper {
@@ -197,7 +198,6 @@
         width: 153px;
         gap: 0px;
         border-radius: 9px;
-        padding:2px 7px 2px 7px;
     }
 
     #get__started__section .section__description {

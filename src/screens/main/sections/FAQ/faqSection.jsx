@@ -13,7 +13,7 @@ export const FAQSection = ({questions}) => {
             </div>
 
             <div className='questions__container'>
-                {questions.length > 0 && questions.map((question) => <QuestionCard question={question} />)}
+                {questions.length > 0 && questions.map((question) => <QuestionCard key={question.id} question={question} />)}
             </div>
 
             <div className='new__question__button__container adaptive'>

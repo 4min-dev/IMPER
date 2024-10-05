@@ -12,7 +12,7 @@ export const AsidePanel = ({indexes, asidePanelHandler, setCurrIndex, scrollToSe
               type='button'
               onClick={() => {
                 setCurrIndex(index);
-                scrollToSection(index);
+                scrollToSection(index.sectionRef);
                 asidePanelHandler()
               }}
             >

@@ -1,6 +1,4 @@
 import React, { useRef, useEffect } from 'react';
-import gsap from 'gsap';
-import { ScrollToPlugin } from 'gsap/ScrollToPlugin';
 import './main.css';
 import getImage from '../../assets/getImage';
 import getIcon from '../../assets/getIcon';
@@ -10,8 +8,6 @@ import { ApplicationSection } from './sections/application/applicationSection';
 import { FAQSection } from './sections/FAQ/faqSection';
 import { FeedBackSection } from './sections/feedback/feedBackSection';
 import { AsidePanel } from './UI/asidePanel/asidePanel';
-
-gsap.registerPlugin(ScrollToPlugin);
 
 const indexes = [
   { name: 'Главная', id: 1, sectionRef: 'main__section' },
@@ -112,6 +108,24 @@ const feedbacks = [
   }
 ]
 
+const smoothScroll = (element) => {
+  const elementToScroll = document.querySelector(`${element}`)
+  elementToScroll.scrollIntoView({ behavior: 'smooth', block: 'center' });
+ }
+
+ const scrollToSection = (section__id) => {
+   smoothScroll(`#${section__id}`)
+};
+
+ const scrollToMiddle = () => {
+   const middleScreen = window.innerHeight
+
+   window.scrollBy({
+     top:middleScreen,
+     behavior:'smooth'
+   })
+ };
+
 export const Main = () => {
 
   const [isMobilePanel, setMobilePanel] = React.useState(false)
@@ -128,7 +142,6 @@ export const Main = () => {
   useEffect(() => {
     const handleScroll = () => {
       if (isScrolling.current) return; // Игнорировать, если сейчас прокручиваем
-
       sectionRefs.current.forEach((section, index) => {
         if (
           section &&
@@ -153,30 +166,6 @@ export const Main = () => {
       circleRef.current.style.transform = `translateX(${activeButton.offsetLeft}px)`;
     }
   }, [currIndex]);
-
-  const scrollToIndex = (scrollIndex) => {
-    if (scrollIndex) {
-      isScrolling.current = true; // Начинаем прокрутку
-      gsap.to(window, {
-        duration: .7,
-        scrollTo: scrollIndex,
-        ease: "power2.inOut",
-        onComplete: () => {
-          isScrolling.current = false; // Завершаем прокрутку
-        },
-      });
-    }
-  }
-
-  const scrollToSection = (index) => {
-    const section = sectionRefs.current[index.id - 1];
-    scrollToIndex(section.offsetTop)
-  };
-
-  const scrollToMiddle = () => {
-    const middlePosition = document.body.scrollHeight / 2; // Вычисляем середину страницы
-    scrollToIndex(middlePosition)
-  };
 
   return (
     <div className="main__page">
@@ -216,9 +205,8 @@ export const Main = () => {
               type='button'
               onClick={() => {
                 setCurrIndex(index);
-                scrollToSection(index);
-              }}
-            >
+                scrollToSection(index.sectionRef);
+              }}>
               {index.name}
             </button>
           ))}
